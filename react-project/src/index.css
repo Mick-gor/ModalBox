@@ -11,13 +11,14 @@ body {
   min-height: 100vh;
 }
 
-.black {
+.h1 {
   font-size: 64px;
   font-weight: 700;
+}
+
+.black {
   color: black;
 }
 .white {
-  font-size: 64px;
-  font-weight: 700;
   color: white;
 }

@@ -1,5 +1,5 @@
 import "./App.css";
-import Title from "./components/Title";
+import Title from "./components/title/Title";
 import { MOCK } from "./data.mock";
 
 const App = () => {
