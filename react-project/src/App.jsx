@@ -1,12 +1,13 @@
 import "./App.css";
 import Title from "./components/Title";
+import { MOCK } from "./data.mock";
 
-function App() {
+const App = () => {
   return (
     <main>
-      <Title color="black" />
+      <Title color="black">{MOCK.title}</Title>
     </main>
   );
-}
+};
 
 export default App;
