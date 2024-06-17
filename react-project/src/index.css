@@ -11,9 +11,18 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  max-width: 35em;
+}
+
 .h1 {
   font-size: 64px;
   font-weight: 700;
+}
+.h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #828282;
 }
 
 .black {
