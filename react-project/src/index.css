@@ -12,17 +12,26 @@ body {
 }
 
 .container {
-  max-width: 35em;
+  width: 842px;
+  height: auto;
 }
 
 .h1 {
   font-size: 64px;
   font-weight: 700;
+  margin: 0 auto;
+  line-height: 77.45px;
+  letter-spacing: -0.02em;
 }
+
 .h2 {
   font-size: 24px;
   font-weight: 400;
   color: #828282;
+  line-height: 36px;
+  margin: 24px auto;
+  width: 600px;
+  height: 72px;
 }
 
 .black {
