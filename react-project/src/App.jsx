@@ -4,7 +4,7 @@ import { MOCK } from "./data.mock";
 
 const App = () => (
   <main className='main-container'>
-    <div className='container'>
+    <div className='content-container'>
       <div className='title-container'>
         <Title color='black'>{MOCK.title}</Title>
       </div>
