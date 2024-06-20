@@ -1,3 +1,5 @@
 export const MOCK = {
-  title: "Lorem Ipsum",
+  title: "Lorem ipsum",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae facilisis nisl.",
 };

@@ -3,7 +3,7 @@ const Title = (props) => {
 
   return (
     <div>
-      <h1 className={`h1 ${textColor}`}>{props.children}</h1>
+      <p className={`title-content ${textColor}`}>{props.children}</p>
     </div>
   );
 };
