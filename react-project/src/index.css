@@ -188,8 +188,6 @@ body {
 }
 
 .button-content {
-  color: white;
-  background-color: black;
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 0.04rem;
@@ -198,7 +196,12 @@ body {
   cursor: pointer;
 }
 
-.button-content-modal {
+.button-white {
+  background-color: black;
+  color: white;
+}
+
+.button-black {
   background-color: white;
   color: black;
 }

@@ -4,6 +4,9 @@ import Title from "./components/title/Title";
 import { MOCK } from "./data.mock";
 
 const App = () => {
+  // TODO: replace with modal funcionality
+  const handleButtonOnClick = () => console.log('button clicked');
+  
   return (
     <main className='main-container'>
       <div className='content-container'>
@@ -14,7 +17,7 @@ const App = () => {
           <Description>{MOCK.description}</Description>
         </div>
         <div className='button-container'>
-          <Button type='button' color='black' onClick={() => {}}>
+          <Button type='button' variant='openModal' onClick={handleButtonOnClick}>
             {MOCK.buttonOpen}
           </Button>
         </div>
