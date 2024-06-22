@@ -123,6 +123,12 @@ table {
   border-spacing: 0;
 }
 
+button {
+  border: 0;
+  padding: 0;
+  border: none;
+}
+
 :root {
   font-family: "Inter", sans-serif;
   background-color: white;
@@ -160,17 +166,44 @@ body {
   text-align: center;
 }
 
+.button-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
 .title-content {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 77px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
 .description-content {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #828282;
-  line-height: 36px;
+  line-height: 2.25rem;
+}
+
+.button-content {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  line-height: 1.5;
+  padding: 1rem 11rem;
+  cursor: pointer;
+}
+
+.button-white {
+  background-color: black;
+  color: white;
+}
+
+.button-black {
+  background-color: white;
+  color: black;
 }
 
 .black {
