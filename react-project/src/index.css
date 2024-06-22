@@ -126,6 +126,7 @@ table {
 button {
   border: 0;
   padding: 0;
+  border: none;
 }
 
 :root {
@@ -167,17 +168,16 @@ body {
 
 .button-container {
   margin-top: 1.5rem;
-  background-color: black;
-  border-radius: 0.5rem;
-  height: 3.87rem;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 .title-content {
   font-size: 4rem;
   font-weight: 700;
-  line-height: 4.81rem;
+  line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
@@ -188,14 +188,19 @@ body {
 }
 
 .button-content {
-  background-color: transparent;
   color: white;
-  border: none;
-  margin: 1rem 10.93rem;
+  background-color: black;
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 0.04rem;
-  line-height: 1.87rem;
+  line-height: 1.5;
+  padding: 1rem 11rem;
+  cursor: pointer;
+}
+
+.button-content-modal {
+  background-color: white;
+  color: black;
 }
 
 .black {
