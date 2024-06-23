@@ -1,28 +1,15 @@
-import Button from "./components/button/Button";
-import Description from "./components/description/Description";
-import Title from "./components/title/Title";
-import { MOCK } from "./data.mock";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Comp from "./pages/compsite";
+import Home from "./pages/home";
 
 const App = () => {
-  // TODO: replace with modal funcionality
-  const handleButtonOnClick = () => console.log('button clicked');
-
   return (
-    <main className='main-container'>
-      <div className='content-container'>
-        <div className='title-container'>
-          <Title color='black'>{MOCK.title}</Title>
-        </div>
-        <div className='description-container'>
-          <Description>{MOCK.description}</Description>
-        </div>
-        <div className='button-container'>
-          <Button type='button' variant='black' onClick={handleButtonOnClick}>
-            {MOCK.buttonOpen}
-          </Button>
-        </div>
-      </div>
-    </main>
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/compsite' element={<Comp />} />
+      </Routes>
+    </HashRouter>
   );
 };
 
