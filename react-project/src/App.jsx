@@ -1,15 +1,17 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
-import Comp from "./pages/compsite";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ComponentsPage from "./pages/components-page";
 import Home from "./pages/home";
 
 const App = () => {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/compsite' element={<Comp />} />
-      </Routes>
-    </HashRouter>
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path='/components-page' element={<ComponentsPage />} />
+        </Routes>
+      </BrowserRouter>
+    </main>
   );
 };
 
