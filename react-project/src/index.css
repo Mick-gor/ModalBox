@@ -213,11 +213,11 @@ body {
 }
 
 .components-page-container {
-  background-color: lightgray;
+  background-color: #d3d3d3;
 }
 
 .components-page-container > * {
-  margin: 2rem 2rem;
+  margin: 2rem;
 }
 
 .button-wrapper-component-page {
