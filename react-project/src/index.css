@@ -154,6 +154,17 @@ body {
   align-items: center;
 }
 
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 8px;
+  max-width: 900px;
+  height: 500px;
+}
+
 .title-container {
   max-width: 52.625rem;
 }
@@ -166,8 +177,14 @@ body {
 
 .button-container {
   margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
+  max-width: 468px;
+  width: 100%;
+}
+
+.button-modal-container {
+  margin-top: 4.4rem;
+  max-width: 500px;
+  width: 100%;
 }
 
 .title-content {
@@ -176,6 +193,7 @@ body {
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
+
 
 .description-content {
   font-size: 1.5rem;
@@ -188,9 +206,9 @@ body {
   font-weight: 500;
   letter-spacing: 0.04rem;
   line-height: 1.5;
-  padding: 1rem 11rem;
   cursor: pointer;
   border-radius: 0.5rem;
+  padding: 1rem;
   width: 100%;
 }
 
