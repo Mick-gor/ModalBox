@@ -6,18 +6,18 @@ import Modal from "../components/modal/Modal";
 import { MOCK } from "../data.mock";
 
 export const Home = () => {
-  const [modal, modalHandler] = useState(false);
+  const [isModalVIsible, setModalVisible] = useState(false);
 
-  const toggleModal = () => {
-    modalHandler(!modal);
+  const handleModalVisible = () => {
+    setModalVisible(prev => !prev);
   };
 
   return (
     <div className='main-container'>
-      {modal && (
+      {isModalVIsible && (
         <div className='modal-overlay'>
           <div className='backdrop' />
-          <Modal handleButtonClick={toggleModal} />
+          <Modal handleButtonClick={handleModalVisible} />
         </div>
       )}
 
@@ -29,7 +29,7 @@ export const Home = () => {
           <Description>{MOCK.description}</Description>
         </div>
         <div className='button-container'>
-          <Button type='button' variant='black' onClick={toggleModal}>
+          <Button type='button' variant='black' onClick={handleModalVisible}>
             {MOCK.buttonOpen}
           </Button>
         </div>
