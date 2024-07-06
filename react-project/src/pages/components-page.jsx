@@ -1,6 +1,7 @@
 import Button from "../components/button/Button";
 import Description from "../components/description/Description";
 import Title from "../components/title/Title";
+import Modal from "../components/modal/Modal";
 import { handleButtonOnClick } from "../utils.js";
 import { MOCK } from "../data.mock";
 
@@ -32,6 +33,10 @@ export const ComponentsPage = () => {
       <div>
         <p>Description:</p>
         <Description>{MOCK.description}</Description>
+      </div>
+      <div>
+        <p>Modal:</p>
+        <Modal />
       </div>
     </div>
   );
