@@ -7,28 +7,40 @@ import { MOCK } from "../data.mock";
 
 export const ComponentsPage = () => {
   return (
-    <div className='components-page-container'>
+    <div className="components-page-container">
       <div>
         <p>Button black:</p>
-        <Button type='button' variant='black' onClick={handleButtonOnClick}>
+        <Button
+          type="button"
+          variant="button-white"
+          onClick={handleButtonOnClick}
+        >
           {MOCK.buttonOpen}
         </Button>
       </div>
       <div>
         <p>Button white:</p>
-        <Button type='button' variant='white' onClick={handleButtonOnClick}>
+        <Button
+          type="button"
+          variant="button-black"
+          onClick={handleButtonOnClick}
+        >
           {MOCK.buttonOpen}
         </Button>
       </div>
-      <div className='button-wrapper-component-page'>
+      <div className="button-wrapper-component-page">
         <p>Button with wrapper:</p>
-        <Button type='button' variant='black' onClick={handleButtonOnClick}>
+        <Button
+          type="button"
+          variant="button-white"
+          onClick={handleButtonOnClick}
+        >
           {MOCK.buttonOpen}
         </Button>
       </div>
       <div>
         <p>Title:</p>
-        <Title color='black'>{MOCK.title}</Title>
+        <Title color="black">{MOCK.title}</Title>
       </div>
       <div>
         <p>Description:</p>
@@ -36,7 +48,7 @@ export const ComponentsPage = () => {
       </div>
       <div>
         <p>Modal:</p>
-        <Modal />
+        <Modal onClick={() => {}} />
       </div>
     </div>
   );

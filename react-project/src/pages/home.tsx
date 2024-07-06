@@ -9,27 +9,31 @@ export const Home = () => {
   const [isModalVIsible, setModalVisible] = useState(false);
 
   const handleModalVisible = () => {
-    setModalVisible(prev => !prev);
+    setModalVisible((prev) => !prev);
   };
 
   return (
-    <div className='main-container'>
+    <div className="main-container">
       {isModalVIsible && (
-        <div className='modal-overlay'>
-          <div className='backdrop' />
-          <Modal handleButtonClick={handleModalVisible} />
+        <div className="modal-overlay">
+          <div className="backdrop" />
+          <Modal onClick={handleModalVisible} />
         </div>
       )}
 
-      <div className='content-container'>
-        <div className='title-container'>
-          <Title color='black'>{MOCK.title}</Title>
+      <div className="content-container">
+        <div className="title-container">
+          <Title color="black">{MOCK.title}</Title>
         </div>
-        <div className='description-container'>
+        <div className="description-container">
           <Description>{MOCK.description}</Description>
         </div>
-        <div className='button-container'>
-          <Button type='button' variant='black' onClick={handleModalVisible}>
+        <div className="button-container">
+          <Button
+            type="button"
+            variant="button-white"
+            onClick={handleModalVisible}
+          >
             {MOCK.buttonOpen}
           </Button>
         </div>
