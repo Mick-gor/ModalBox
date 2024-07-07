@@ -14,7 +14,13 @@ export const Home = () => {
 
   return (
     <div className="main-container">
-      {isModalVIsible && <ModalView handleModalVisible={handleModalVisible} />}
+      {isModalVIsible && (
+        <ModalView
+          title={MOCK.title}
+          buttonCTA={MOCK.buttonClose}
+          handleModalVisible={handleModalVisible}
+        />
+      )}
 
       <div className="content-container">
         <div className="title-container">
