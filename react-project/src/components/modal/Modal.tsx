@@ -1,6 +1,5 @@
 import Button from "../button/Button";
 import Title from "../title/Title";
-import { MOCK } from "../../data.mock";
 
 interface ModalProps {
   title: string;

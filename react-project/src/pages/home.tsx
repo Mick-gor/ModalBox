@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../components/button/Button";
 import Description from "../components/description/Description";
 import Title from "../components/title/Title";
-import Modal from "../components/modal/Modal";
+import ModalView from "../components/modal/ModalView";
 import { MOCK } from "../data.mock";
 
 export const Home = () => {
@@ -14,16 +14,7 @@ export const Home = () => {
 
   return (
     <div className="main-container">
-      {isModalVIsible && (
-        <div className="modal-overlay">
-          <div className="backdrop" />
-          <Modal
-            buttonCTA={MOCK.buttonClose}
-            title={MOCK.title}
-            handleButtonClick={handleModalVisible}
-          />
-        </div>
-      )}
+      {isModalVIsible && <ModalView handleModalVisible={handleModalVisible} />}
 
       <div className="content-container">
         <div className="title-container">
@@ -33,7 +24,7 @@ export const Home = () => {
           <Description>{MOCK.description}</Description>
         </div>
         <div className="button-container">
-          <Button variant="white" onClick={handleModalVisible}>
+          <Button type="button" variant="white" onClick={handleModalVisible}>
             {MOCK.buttonOpen}
           </Button>
         </div>

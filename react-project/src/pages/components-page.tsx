@@ -11,19 +11,19 @@ export const ComponentsPage = () => {
     <div className="components-page-container">
       <div>
         <p>Button black:</p>
-        <Button variant="white" onClick={handleButtonOnClick}>
+        <Button type="button" variant="white" onClick={handleButtonOnClick}>
           {MOCK.buttonOpen}
         </Button>
       </div>
       <div>
         <p>Button white:</p>
-        <Button variant="black" onClick={handleButtonOnClick}>
+        <Button type="button" variant="black" onClick={handleButtonOnClick}>
           {MOCK.buttonOpen}
         </Button>
       </div>
       <div className="button-wrapper-component-page">
         <p>Button with wrapper:</p>
-        <Button variant="white" onClick={handleButtonOnClick}>
+        <Button type="button" variant="white" onClick={handleButtonOnClick}>
           {MOCK.buttonOpen}
         </Button>
       </div>
