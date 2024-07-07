@@ -6,7 +6,7 @@ import Modal from "../components/modal/Modal";
 import { MOCK } from "../data.mock";
 
 export const Home = () => {
-  const [isModalVIsible, setModalVisible] = useState(false);
+  const [isModalVIsible, setModalVisible] = useState<boolean>(false);
 
   const handleModalVisible = () => {
     setModalVisible((prev) => !prev);
@@ -17,7 +17,11 @@ export const Home = () => {
       {isModalVIsible && (
         <div className="modal-overlay">
           <div className="backdrop" />
-          <Modal onClick={handleModalVisible} />
+          <Modal
+            buttonCTA={MOCK.buttonClose}
+            title={MOCK.title}
+            handleButtonClick={handleModalVisible}
+          />
         </div>
       )}
 
@@ -29,11 +33,7 @@ export const Home = () => {
           <Description>{MOCK.description}</Description>
         </div>
         <div className="button-container">
-          <Button
-            type="button"
-            variant="button-white"
-            onClick={handleModalVisible}
-          >
+          <Button variant="white" onClick={handleModalVisible}>
             {MOCK.buttonOpen}
           </Button>
         </div>

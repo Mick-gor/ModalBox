@@ -3,6 +3,7 @@ import Description from "../components/description/Description";
 import Title from "../components/title/Title";
 import Modal from "../components/modal/Modal";
 import { handleButtonOnClick } from "../utils.js";
+import { noop } from "../utils.js";
 import { MOCK } from "../data.mock";
 
 export const ComponentsPage = () => {
@@ -10,31 +11,19 @@ export const ComponentsPage = () => {
     <div className="components-page-container">
       <div>
         <p>Button black:</p>
-        <Button
-          type="button"
-          variant="button-white"
-          onClick={handleButtonOnClick}
-        >
+        <Button variant="white" onClick={handleButtonOnClick}>
           {MOCK.buttonOpen}
         </Button>
       </div>
       <div>
         <p>Button white:</p>
-        <Button
-          type="button"
-          variant="button-black"
-          onClick={handleButtonOnClick}
-        >
+        <Button variant="black" onClick={handleButtonOnClick}>
           {MOCK.buttonOpen}
         </Button>
       </div>
       <div className="button-wrapper-component-page">
         <p>Button with wrapper:</p>
-        <Button
-          type="button"
-          variant="button-white"
-          onClick={handleButtonOnClick}
-        >
+        <Button variant="white" onClick={handleButtonOnClick}>
           {MOCK.buttonOpen}
         </Button>
       </div>
@@ -48,7 +37,11 @@ export const ComponentsPage = () => {
       </div>
       <div>
         <p>Modal:</p>
-        <Modal onClick={() => {}} />
+        <Modal
+          title={MOCK.title}
+          buttonCTA={MOCK.buttonClose}
+          handleButtonClick={noop}
+        />
       </div>
     </div>
   );
