@@ -1,7 +1,7 @@
 import Button from "../button/Button";
 import Title from "../title/Title";
 
-interface ModalProps {
+export interface ModalProps {
   title: string;
   buttonCTA: string;
   handleButtonClick: () => void;

@@ -18,7 +18,7 @@ export const Home = () => {
         <ModalView
           title={MOCK.title}
           buttonCTA={MOCK.buttonClose}
-          handleModalVisible={handleModalVisible}
+          handleButtonClick={handleModalVisible}
         />
       )}
 

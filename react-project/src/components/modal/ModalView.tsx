@@ -1,23 +1,18 @@
 import Modal from "./Modal";
-
-interface ModalViewProps {
-  title: string;
-  buttonCTA: string;
-  handleModalVisible: () => void;
-}
+import { ModalProps } from "./Modal";
 
 const ModalView = ({
   title,
   buttonCTA,
-  handleModalVisible,
-}: ModalViewProps) => {
+  handleButtonClick,
+}: ModalProps) => {
   return (
     <div className="modal-overlay">
       <div className="backdrop" />
       <Modal
         buttonCTA={buttonCTA}
         title={title}
-        handleButtonClick={handleModalVisible}
+        handleButtonClick={handleButtonClick}
       />
     </div>
   );
