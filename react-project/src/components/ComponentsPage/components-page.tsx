@@ -2,16 +2,13 @@ import Button from "../../components/button/Button";
 import Description from "../../components/description/Description";
 import Title from "../../components/title/Title";
 import Modal from "../../components/modal/Modal";
-import { handleButtonOnClick } from "../../utils.js";
-import { noop } from "../../utils.js";
+import { handleButtonOnClick, noop } from "../../utils.js";
 import { MOCK } from "../../data.mock";
-import { GlobalStyles } from "../../global.styles";
 import * as Styled from "./components-page.styles";
 
 export const ComponentsPageView = () => {
   return (
     <Styled.ComponentsPageContainer>
-      <GlobalStyles />
       <div>
         <p>Button black:</p>
         <Button type="button" variant="white" onClick={handleButtonOnClick}>

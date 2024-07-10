@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ComponentsPage from "./components/ComponentsPage/components-page";
+import Components from "./pages/components";
 import Home from "./pages/home";
 import { GlobalStyles } from "./global.styles";
 
@@ -10,7 +10,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/components" element={<ComponentsPage />} />
+          <Route path="/components" element={<Components />} />
         </Routes>
       </BrowserRouter>
     </main>

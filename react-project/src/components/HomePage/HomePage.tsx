@@ -1,8 +1,8 @@
 import Button from "../button/Button";
 import Description from "../description/Description";
 import ModalView from "../modal/ModalView";
-import { MOCK } from "../../data.mock";
 import Title from "../title/Title";
+import { MOCK } from "../../data.mock";
 import { useState } from "react";
 import * as Styled from "./Home.styles";
 

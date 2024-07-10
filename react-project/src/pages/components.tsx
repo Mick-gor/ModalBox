@@ -1,7 +1,7 @@
-import ComponentsPageView from "../components/HomePage/HomePage";
+import ComponentsPageView from "../components/ComponentsPage/components-page";
 
-export const Home = () => {
+export const Components = () => {
   return <ComponentsPageView />;
 };
 
-export default Home;
+export default Components;
