@@ -10,9 +10,7 @@ export interface ModalProps {
 const Modal = ({ title, buttonCTA, handleButtonClick }: ModalProps) => {
   return (
     <Styles.ModalContainer>
-      <Styles.TitleContainer>
-        <Title color="white">{title}</Title>
-      </Styles.TitleContainer>
+      <Title color="white">{title}</Title>
       <Styles.ButtonModalContainer>
         <Button variant="black" onClick={handleButtonClick}>
           {buttonCTA}
