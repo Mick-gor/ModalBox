@@ -1,4 +1,4 @@
-html,
+/* html,
 body,
 div,
 span,
@@ -138,9 +138,9 @@ body {
   margin: 0;
   min-height: 100vh;
   position: relative;
-}
+} 
 
-.main-container {
+/* .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,9 +153,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
-.modal-container {
+/* .modal-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -167,42 +167,42 @@ body {
   height: 500px;
   row-gap: 71px;
   z-index: 20;
-}
+}  */
 
-.title-container {
+/* .title-container {
   max-width: 842px;
-}
+} */
 
-.description-container {
+/* .description-container {
   margin-top: 24px;
   max-width: 600px;
   text-align: center;
-}
+} */
 
-.button-container {
+/* .button-container {
   margin-top: 24px;
   max-width: 468px;
   width: 100%;
-}
+} */
 
-.button-modal-container {
+/* .button-modal-container {
   max-width: 500px;
   width: 100%;
-}
+} */
 
-.title-content {
+/* .title-content {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
-}
+} */
 
-.description-content {
+/* .description-content {
   font-size: 24px;
   color: #828282;
   line-height: 36px;
-}
+} */
 
-.button-content {
+/* .button-content {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
@@ -210,9 +210,9 @@ body {
   border-radius: 8px;
   padding: 1rem;
   width: 100%;
-}
+} */
 
-.modal-overlay {
+/* .modal-overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,9 +223,9 @@ body {
   left: 0;
   position: fixed;
   z-index: 10;
-}
+} */
 
-.backdrop {
+/* .backdrop {
   position: absolute;
   top: 0;
   left: 0;
@@ -233,9 +233,9 @@ body {
   height: 100vh;
   background-color: #000000;
   opacity: 40%;
-}
+} */
 
-.button-white {
+/* .button-white {
   background-color: black;
   color: white;
 }
@@ -243,17 +243,17 @@ body {
 .button-black {
   background-color: white;
   color: black;
-}
+} */
 
-.black {
+/* .black {
   color: black;
 }
 
 .white {
   color: white;
-}
+} */
 
-.components-page-container {
+/* .components-page-container {
   background-color: #d3d3d3;
 }
 
@@ -263,4 +263,4 @@ body {
 
 .button-wrapper-component-page {
   max-width: 40rem;
-}
+} */

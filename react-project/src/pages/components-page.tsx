@@ -5,10 +5,14 @@ import Modal from "../components/modal/Modal";
 import { handleButtonOnClick } from "../utils.js";
 import { noop } from "../utils.js";
 import { MOCK } from "../data.mock";
+import { GlobalStyles } from "../Global.styles";
+import { ComponentsPageContainerStyled } from "./components-page.styles";
+import { ButtonWrapperComponentPageStyled } from "./components-page.styles";
 
 export const ComponentsPage = () => {
   return (
-    <div className="components-page-container">
+    <ComponentsPageContainerStyled>
+      <GlobalStyles />
       <div>
         <p>Button black:</p>
         <Button type="button" variant="white" onClick={handleButtonOnClick}>
@@ -21,12 +25,12 @@ export const ComponentsPage = () => {
           {MOCK.buttonOpen}
         </Button>
       </div>
-      <div className="button-wrapper-component-page">
+      <ButtonWrapperComponentPageStyled>
         <p>Button with wrapper:</p>
         <Button type="button" variant="white" onClick={handleButtonOnClick}>
           {MOCK.buttonOpen}
         </Button>
-      </div>
+      </ButtonWrapperComponentPageStyled>
       <div>
         <p>Title:</p>
         <Title color="black">{MOCK.title}</Title>
@@ -43,7 +47,7 @@ export const ComponentsPage = () => {
           handleButtonClick={noop}
         />
       </div>
-    </div>
+    </ComponentsPageContainerStyled>
   );
 };
 
