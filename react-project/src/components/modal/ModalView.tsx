@@ -1,17 +1,17 @@
 import Modal from "./Modal";
 import { ModalProps } from "./Modal";
-import * as Styles from "./Modal.styles";
+import * as Styled from "./Modal.styles";
 
 const ModalView = ({ title, buttonCTA, handleButtonClick }: ModalProps) => {
   return (
-    <Styles.ModalOverlay>
-      <Styles.Backdrop />
+    <Styled.ModalOverlay>
+      <Styled.Backdrop />
       <Modal
         buttonCTA={buttonCTA}
         title={title}
         handleButtonClick={handleButtonClick}
       />
-    </Styles.ModalOverlay>
+    </Styled.ModalOverlay>
   );
 };
 

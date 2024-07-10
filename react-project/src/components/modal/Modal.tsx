@@ -1,6 +1,6 @@
 import Button from "../button/Button";
 import Title from "../title/Title";
-import * as Styles from "./Modal.styles";
+import * as Styled from "./Modal.styles";
 export interface ModalProps {
   title: string;
   buttonCTA: string;
@@ -9,14 +9,14 @@ export interface ModalProps {
 
 const Modal = ({ title, buttonCTA, handleButtonClick }: ModalProps) => {
   return (
-    <Styles.ModalContainer>
+    <Styled.ModalContainer>
       <Title color="white">{title}</Title>
-      <Styles.ButtonModalContainer>
+      <Styled.ButtonModalContainer>
         <Button variant="black" onClick={handleButtonClick}>
           {buttonCTA}
         </Button>
-      </Styles.ButtonModalContainer>
-    </Styles.ModalContainer>
+      </Styled.ButtonModalContainer>
+    </Styled.ModalContainer>
   );
 };
 

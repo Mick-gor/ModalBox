@@ -1,14 +1,14 @@
-import Button from "../components/button/Button";
-import Description from "../components/description/Description";
-import Title from "../components/title/Title";
-import Modal from "../components/modal/Modal";
-import { handleButtonOnClick } from "../utils.js";
-import { noop } from "../utils.js";
-import { MOCK } from "../data.mock";
-import { GlobalStyles } from "../global.styles";
+import Button from "../../components/button/Button";
+import Description from "../../components/description/Description";
+import Title from "../../components/title/Title";
+import Modal from "../../components/modal/Modal";
+import { handleButtonOnClick } from "../../utils.js";
+import { noop } from "../../utils.js";
+import { MOCK } from "../../data.mock";
+import { GlobalStyles } from "../../global.styles";
 import * as Styled from "./components-page.styles";
 
-export const ComponentsPage = () => {
+export const ComponentsPageView = () => {
   return (
     <Styled.ComponentsPageContainer>
       <GlobalStyles />
@@ -50,4 +50,4 @@ export const ComponentsPage = () => {
   );
 };
 
-export default ComponentsPage;
+export default ComponentsPageView;

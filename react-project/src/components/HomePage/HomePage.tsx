@@ -1,11 +1,10 @@
-import { useState } from "react";
-import { GlobalStyles } from "../../global.styles";
 import Button from "../button/Button";
 import Description from "../description/Description";
-import Title from "../title/Title";
 import ModalView from "../modal/ModalView";
 import { MOCK } from "../../data.mock";
-import * as Styles from "./Home.styles";
+import Title from "../title/Title";
+import { useState } from "react";
+import * as Styled from "./Home.styles";
 
 export const HomeView = () => {
   const [isModalVIsible, setModalVisible] = useState<boolean>(false);
@@ -15,8 +14,7 @@ export const HomeView = () => {
   };
 
   return (
-    <Styles.MainContainer>
-      <GlobalStyles />
+    <Styled.MainContainer>
       {isModalVIsible && (
         <ModalView
           title={MOCK.title}
@@ -25,17 +23,17 @@ export const HomeView = () => {
         />
       )}
 
-      <Styles.ConetentContainer>
+      <Styled.ConetentContainer>
         <Title color="black">{MOCK.title}</Title>
 
         <Description>{MOCK.description}</Description>
-        <Styles.ButtonContainer>
+        <Styled.ButtonContainer>
           <Button type="button" variant="white" onClick={handleModalVisible}>
             {MOCK.buttonOpen}
           </Button>
-        </Styles.ButtonContainer>
-      </Styles.ConetentContainer>
-    </Styles.MainContainer>
+        </Styled.ButtonContainer>
+      </Styled.ConetentContainer>
+    </Styled.MainContainer>
   );
 };
 
