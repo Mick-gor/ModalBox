@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MainContainerStyles = styled.div`
+export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,8 +9,15 @@ export const MainContainerStyles = styled.div`
 `;
 
 export const ConetentContainer = styled.div`
-  width: 842px;
+  width: 100%;
+  max-width: 842px;
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const ButtonContainer = styled.div`
+  margin-top: 24px;
+  max-width: 468px;
+  width: 100%;
 `;

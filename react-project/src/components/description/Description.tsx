@@ -1,11 +1,15 @@
-import { DescriptionStyled } from "./Description.styles";
+import * as Styled from "./Description.styles";
 
 interface DescriptionProps {
   children: string;
 }
 
 const Description = ({ children }: DescriptionProps) => {
-  return <DescriptionStyled>{children}</DescriptionStyled>;
+  return (
+    <Styled.DescriptionContainer>
+      <Styled.Description>{children}</Styled.Description>
+    </Styled.DescriptionContainer>
+  );
 };
 
 export default Description;

@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from "react";
-import { ButtonStyled } from "./Button.styles";
+import * as Styled from "./Button.styles";
 
 export type ButtonProps = {
   children: string;
@@ -9,9 +9,9 @@ export type ButtonProps = {
 
 const Button = ({ children, variant, onClick }: ButtonProps) => {
   return (
-    <ButtonStyled variant={variant} onClick={onClick}>
+    <Styled.Button variant={variant} onClick={onClick}>
       {children}
-    </ButtonStyled>
+    </Styled.Button>
   );
 };
 export default Button;

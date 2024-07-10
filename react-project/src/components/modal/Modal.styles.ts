@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ModalContainerStyled = styled.div`
+export const ModalContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@ export const ModalContainerStyled = styled.div`
   z-index: 20;
 `;
 
-export const ModalOverlayStyled = styled.div`
+export const ModalOverlay = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,13 @@ export const Backdrop = styled.div`
   height: 100vh;
   background-color: #000000;
   opacity: 40%;
+`;
+
+export const TitleContainer = styled.div`
+  max-width: 842px;
+`;
+
+export const ButtonModalContainer = styled.div`
+  max-width: 500px;
+  width: 100%;
 `;
