@@ -1,14 +1,14 @@
-import Button from "../components/button/Button";
-import Description from "../components/description/Description";
-import Title from "../components/title/Title";
-import Modal from "../components/modal/Modal";
-import { handleButtonOnClick } from "../utils.js";
-import { noop } from "../utils.js";
-import { MOCK } from "../data.mock";
+import Button from "../../components/button/Button";
+import Description from "../../components/description/Description";
+import Title from "../../components/title/Title";
+import Modal from "../../components/modal/Modal";
+import { handleButtonOnClick, noop } from "../../utils.js";
+import { MOCK } from "../../data.mock";
+import * as Styled from "./components-page.styles";
 
-export const ComponentsPage = () => {
+export const ComponentsPageView = () => {
   return (
-    <div className="components-page-container">
+    <Styled.ComponentsPageContainer>
       <div>
         <p>Button black:</p>
         <Button type="button" variant="white" onClick={handleButtonOnClick}>
@@ -21,12 +21,12 @@ export const ComponentsPage = () => {
           {MOCK.buttonOpen}
         </Button>
       </div>
-      <div className="button-wrapper-component-page">
+      <Styled.ButtonWrapperComponentPage>
         <p>Button with wrapper:</p>
         <Button type="button" variant="white" onClick={handleButtonOnClick}>
           {MOCK.buttonOpen}
         </Button>
-      </div>
+      </Styled.ButtonWrapperComponentPage>
       <div>
         <p>Title:</p>
         <Title color="black">{MOCK.title}</Title>
@@ -43,8 +43,8 @@ export const ComponentsPage = () => {
           handleButtonClick={noop}
         />
       </div>
-    </div>
+    </Styled.ComponentsPageContainer>
   );
 };
 
-export default ComponentsPage;
+export default ComponentsPageView;

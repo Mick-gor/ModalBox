@@ -1,18 +1,17 @@
 import { ButtonHTMLAttributes } from "react";
+import * as Styled from "./Button.styles";
 
-type ButtonProps = {
+export type ButtonProps = {
   children: string;
   variant: "white" | "black";
   onClick: () => void;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({ children, variant, onClick }: ButtonProps) => {
-  const buttonColor = variant === "white" ? "button-white" : "button-black";
-
   return (
-    <button className={`button-content ${buttonColor}`} onClick={onClick}>
+    <Styled.Button variant={variant} onClick={onClick}>
       {children}
-    </button>
+    </Styled.Button>
   );
 };
 export default Button;

@@ -1,13 +1,15 @@
-type TitleProps = {
+import * as Styled from "./Title.styles";
+
+export type TitleProps = {
   color: "white" | "black";
   children: String;
-}
+};
 
-const Title = ({color, children}: TitleProps) => {
+const Title = ({ color, children }: TitleProps) => {
   return (
-    <div>
-      <p className={`title-content ${color}`}>{children}</p>
-    </div>
+    <Styled.TitleContainer>
+      <Styled.Title color={color}>{children}</Styled.Title>
+    </Styled.TitleContainer>
   );
 };
 
